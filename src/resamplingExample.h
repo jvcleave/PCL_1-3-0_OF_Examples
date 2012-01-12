@@ -25,3 +25,5 @@ class resamplingExample : public ofBaseApp{
 		pcl::PointCloud<pcl::PointNormal> mls_cloud;
 		
 };
+
+//from http://pointclouds.org/documentation/tutorials/resampling.php

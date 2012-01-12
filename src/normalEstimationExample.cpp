@@ -15,7 +15,7 @@ void normalEstimationExample::setup(){
 	
 	// Create an empty kdtree representation, and pass it to the normal estimation object.
 	// Its content will be filled inside the object, based on the given input dataset (as no other search surface is given).
-	pcl::KdTreeFLANN<pcl::PointXYZ>::Ptr tree (new pcl::KdTreeFLANN<pcl::PointXYZ> ());
+	pcl::search::KdTree<pcl::PointXYZ>::Ptr tree (new pcl::search::KdTree<pcl::PointXYZ> ());
 	ne.setSearchMethod (tree);
 	
 	// Output datasets
@@ -27,6 +27,8 @@ void normalEstimationExample::setup(){
 	// Compute the features
 	ne.compute (*cloud_normals);
 	
+	cout << "cloud_normals->points.size (): " << cloud_normals->points.size () << endl;
+	//To compute a single point normal, use:
 	//computePointNormal (const pcl::PointCloud<PointInT> &cloud, const std::vector<int> &indices, Eigen::Vector4f &plane_parameters, float &curvature);
 
 }

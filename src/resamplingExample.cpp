@@ -4,15 +4,13 @@
 void resamplingExample::setup(){
 	// Load input file into a PointCloud<T> with an appropriate type
 	pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ> ());
-	sensor_msgs::PointCloud2 cloud_blob;
 	// Load bun0.pcd -- should be available with the PCL archive in test 
 	string filePath = ofToDataPath("bun0.pcd", true);
-	pcl::io::loadPCDFile (filePath, cloud_blob);
-	pcl::fromROSMsg (cloud_blob, *cloud);
+	pcl::io::loadPCDFile (filePath, *cloud);
 	
 	// Create a KD-Tree
-	pcl::KdTree<pcl::PointXYZ>::Ptr tree (new pcl::KdTreeFLANN<pcl::PointXYZ>);
-	tree->setInputCloud (cloud);
+	pcl::search::KdTree<pcl::PointXYZ>::Ptr tree (new pcl::search::KdTree<pcl::PointXYZ>);
+
 	
 	// Output has the same type as the input one, it will be only smoothed
 	pcl::PointCloud<pcl::PointXYZ> mls_points;
@@ -34,6 +32,7 @@ void resamplingExample::setup(){
 	mls.reconstruct (mls_points);
 	
 	// Concatenate fields for saving
+
 	
 	pcl::concatenateFields (mls_points, *mls_normals, mls_cloud);
 	
@@ -56,7 +55,7 @@ void resamplingExample::draw(){
 void resamplingExample::keyPressed(int key){
 	if (key == ' ') {
 		string outputFilePath = ofToDataPath("", true);
-		outputFilePath += ofGetTimestampString()+"bun0-mls.pcd";
+		outputFilePath += ofGetTimestampString()+"_resamplingExample_bun0-mls.pcd";
 		// Save output
 		pcl::io::savePCDFile (outputFilePath, mls_cloud);
 	}

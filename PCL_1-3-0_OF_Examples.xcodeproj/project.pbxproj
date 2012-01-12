@@ -37,6 +37,9 @@
 		032F9D0A14673222003AE10D /* voxelGridFilterExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032F9D0014673222003AE10D /* voxelGridFilterExample.cpp */; };
 		032F9D2414673357003AE10D /* flann_cpp_s-gd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 032F9D2214673357003AE10D /* flann_cpp_s-gd.a */; };
 		032F9D2514673357003AE10D /* flann_cpp_s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 032F9D2314673357003AE10D /* flann_cpp_s.a */; };
+		037A472014BEB35000C38F1D /* normalEstimationExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032F9CF414673222003AE10D /* normalEstimationExample.cpp */; };
+		037A473214BEB66D00C38F1D /* greedyProjectionExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032F9CF014673222003AE10D /* greedyProjectionExample.cpp */; };
+		0392CFD814BEBCEA00C3EDCD /* resamplingExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032F9CFC14673222003AE10D /* resamplingExample.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -167,6 +170,90 @@
 			remoteGlobalIDString = 03E902061466891D00A00E3E;
 			remoteInfo = pcl_io;
 		};
+		037A470014BEB2A500C38F1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032F9BD014672A47003AE10D /* PCL_1-3-0_Libraries_for_OF.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E901FB146688AD00A00E3E;
+			remoteInfo = pcl_octree;
+		};
+		037A470214BEB2A500C38F1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032F9BD014672A47003AE10D /* PCL_1-3-0_Libraries_for_OF.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E902EA14669AAF00A00E3E;
+			remoteInfo = pcl_sample_consensus;
+		};
+		037A470414BEB2A500C38F1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032F9BD014672A47003AE10D /* PCL_1-3-0_Libraries_for_OF.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E9030414669B4A00A00E3E;
+			remoteInfo = pcl_kdtree;
+		};
+		037A470614BEB2A500C38F1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032F9BD014672A47003AE10D /* PCL_1-3-0_Libraries_for_OF.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E9032F14669BED00A00E3E;
+			remoteInfo = pcl_search;
+		};
+		037A470814BEB2A500C38F1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032F9BD014672A47003AE10D /* PCL_1-3-0_Libraries_for_OF.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E9033D14669C3100A00E3E;
+			remoteInfo = pcl_filters;
+		};
+		037A470A14BEB2A500C38F1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032F9BD014672A47003AE10D /* PCL_1-3-0_Libraries_for_OF.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E9035814669C9D00A00E3E;
+			remoteInfo = pcl_segmentation;
+		};
+		037A470C14BEB2A500C38F1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032F9BD014672A47003AE10D /* PCL_1-3-0_Libraries_for_OF.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E9037B14669CF900A00E3E;
+			remoteInfo = pcl_range_image;
+		};
+		037A470E14BEB2A500C38F1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032F9BD014672A47003AE10D /* PCL_1-3-0_Libraries_for_OF.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E9039314669E5C00A00E3E;
+			remoteInfo = pcl_features;
+		};
+		037A471014BEB2A500C38F1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032F9BD014672A47003AE10D /* PCL_1-3-0_Libraries_for_OF.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E903BD1466A0DF00A00E3E;
+			remoteInfo = pcl_range_image_border_extractor;
+		};
+		037A471214BEB2A500C38F1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032F9BD014672A47003AE10D /* PCL_1-3-0_Libraries_for_OF.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E903E71466A1B000A00E3E;
+			remoteInfo = pcl_surface;
+		};
+		037A471414BEB2A500C38F1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032F9BD014672A47003AE10D /* PCL_1-3-0_Libraries_for_OF.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E9041B1466A2DA00A00E3E;
+			remoteInfo = pcl_registration;
+		};
+		037A471614BEB2A500C38F1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032F9BD014672A47003AE10D /* PCL_1-3-0_Libraries_for_OF.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E904381466A33B00A00E3E;
+			remoteInfo = pcl_keypoints;
+		};
 		E4328147138ABC890047C5CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
@@ -214,10 +301,10 @@
 		032F9CF314673222003AE10D /* kdtreeSearchExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kdtreeSearchExample.h; sourceTree = "<group>"; };
 		032F9CF414673222003AE10D /* normalEstimationExample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = normalEstimationExample.cpp; sourceTree = "<group>"; };
 		032F9CF514673222003AE10D /* normalEstimationExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = normalEstimationExample.h; sourceTree = "<group>"; };
-		032F9CF614673222003AE10D /* openniGrabberExample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = openniGrabberExample.cpp; path = src/openniGrabberExample.cpp; sourceTree = SOURCE_ROOT; };
-		032F9CF714673222003AE10D /* openniGrabberExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = openniGrabberExample.h; path = src/openniGrabberExample.h; sourceTree = SOURCE_ROOT; };
-		032F9CF814673222003AE10D /* openNIGrabFrameApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = openNIGrabFrameApp.cpp; path = src/openNIGrabFrameApp.cpp; sourceTree = SOURCE_ROOT; };
-		032F9CF914673222003AE10D /* openNIGrabFrameApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = openNIGrabFrameApp.h; path = src/openNIGrabFrameApp.h; sourceTree = SOURCE_ROOT; };
+		032F9CF614673222003AE10D /* openniGrabberExample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = openniGrabberExample.cpp; sourceTree = "<group>"; };
+		032F9CF714673222003AE10D /* openniGrabberExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openniGrabberExample.h; sourceTree = "<group>"; };
+		032F9CF814673222003AE10D /* openNIGrabFrameApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = openNIGrabFrameApp.cpp; sourceTree = "<group>"; };
+		032F9CF914673222003AE10D /* openNIGrabFrameApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openNIGrabFrameApp.h; sourceTree = "<group>"; };
 		032F9CFA14673222003AE10D /* pointCloudCompressionExample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pointCloudCompressionExample.cpp; sourceTree = "<group>"; };
 		032F9CFB14673222003AE10D /* pointCloudCompressionExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pointCloudCompressionExample.h; sourceTree = "<group>"; };
 		032F9CFC14673222003AE10D /* resamplingExample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = resamplingExample.cpp; sourceTree = "<group>"; };
@@ -338,21 +425,6 @@
 			path = "../PCL_1-3-0_Libraries_for_OF/3rdPartyLibs/boost_1_47_0/lib";
 			sourceTree = SOURCE_ROOT;
 		};
-		032F9D1114673292003AE10D /* need to be updated */ = {
-			isa = PBXGroup;
-			children = (
-				032F9CFA14673222003AE10D /* pointCloudCompressionExample.cpp */,
-				032F9CFB14673222003AE10D /* pointCloudCompressionExample.h */,
-				032F9CFC14673222003AE10D /* resamplingExample.cpp */,
-				032F9CFD14673222003AE10D /* resamplingExample.h */,
-				032F9CF414673222003AE10D /* normalEstimationExample.cpp */,
-				032F9CF514673222003AE10D /* normalEstimationExample.h */,
-				032F9CF014673222003AE10D /* greedyProjectionExample.cpp */,
-				032F9CF114673222003AE10D /* greedyProjectionExample.h */,
-			);
-			name = "need to be updated";
-			sourceTree = "<group>";
-		};
 		032F9D1D1467331E003AE10D /* PCL_Dependencies */ = {
 			isa = PBXGroup;
 			children = (
@@ -391,6 +463,18 @@
 		032F9D3B14673406003AE10D /* checked */ = {
 			isa = PBXGroup;
 			children = (
+				032F9CF614673222003AE10D /* openniGrabberExample.cpp */,
+				032F9CF714673222003AE10D /* openniGrabberExample.h */,
+				032F9CF814673222003AE10D /* openNIGrabFrameApp.cpp */,
+				032F9CF914673222003AE10D /* openNIGrabFrameApp.h */,
+				032F9CFC14673222003AE10D /* resamplingExample.cpp */,
+				032F9CFD14673222003AE10D /* resamplingExample.h */,
+				032F9CFA14673222003AE10D /* pointCloudCompressionExample.cpp */,
+				032F9CFB14673222003AE10D /* pointCloudCompressionExample.h */,
+				032F9CF014673222003AE10D /* greedyProjectionExample.cpp */,
+				032F9CF114673222003AE10D /* greedyProjectionExample.h */,
+				032F9CF414673222003AE10D /* normalEstimationExample.cpp */,
+				032F9CF514673222003AE10D /* normalEstimationExample.h */,
 				032F9D0014673222003AE10D /* voxelGridFilterExample.cpp */,
 				032F9D0114673222003AE10D /* voxelGridFilterExample.h */,
 				032F9CFE14673222003AE10D /* statisticalOutlierRemovalExample.cpp */,
@@ -471,11 +555,6 @@
 			isa = PBXGroup;
 			children = (
 				032F9D3B14673406003AE10D /* checked */,
-				032F9D1114673292003AE10D /* need to be updated */,
-				032F9CF614673222003AE10D /* openniGrabberExample.cpp */,
-				032F9CF714673222003AE10D /* openniGrabberExample.h */,
-				032F9CF814673222003AE10D /* openNIGrabFrameApp.cpp */,
-				032F9CF914673222003AE10D /* openNIGrabFrameApp.h */,
 				032F9BB81467296C003AE10D /* emptyApp.cpp */,
 				032F9BB91467296C003AE10D /* emptyApp.h */,
 				032F9BBA1467296C003AE10D /* main.cpp */,
@@ -512,6 +591,18 @@
 				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
 				0352D81E1467D1BD0050D784 /* PBXTargetDependency */,
 				0352D8201467D1BD0050D784 /* PBXTargetDependency */,
+				037A470114BEB2A500C38F1D /* PBXTargetDependency */,
+				037A470314BEB2A500C38F1D /* PBXTargetDependency */,
+				037A470514BEB2A500C38F1D /* PBXTargetDependency */,
+				037A470714BEB2A500C38F1D /* PBXTargetDependency */,
+				037A470914BEB2A500C38F1D /* PBXTargetDependency */,
+				037A470B14BEB2A500C38F1D /* PBXTargetDependency */,
+				037A470D14BEB2A500C38F1D /* PBXTargetDependency */,
+				037A470F14BEB2A500C38F1D /* PBXTargetDependency */,
+				037A471114BEB2A500C38F1D /* PBXTargetDependency */,
+				037A471314BEB2A500C38F1D /* PBXTargetDependency */,
+				037A471514BEB2A500C38F1D /* PBXTargetDependency */,
+				037A471714BEB2A500C38F1D /* PBXTargetDependency */,
 			);
 			name = emptyExample;
 			productName = myOFApp;
@@ -691,6 +782,9 @@
 				032F9D0714673222003AE10D /* pointCloudCompressionExample.cpp in Sources */,
 				032F9D0914673222003AE10D /* statisticalOutlierRemovalExample.cpp in Sources */,
 				032F9D0A14673222003AE10D /* voxelGridFilterExample.cpp in Sources */,
+				037A472014BEB35000C38F1D /* normalEstimationExample.cpp in Sources */,
+				037A473214BEB66D00C38F1D /* greedyProjectionExample.cpp in Sources */,
+				0392CFD814BEBCEA00C3EDCD /* resamplingExample.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -706,6 +800,66 @@
 			isa = PBXTargetDependency;
 			name = pcl_io;
 			targetProxy = 0352D81F1467D1BD0050D784 /* PBXContainerItemProxy */;
+		};
+		037A470114BEB2A500C38F1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pcl_octree;
+			targetProxy = 037A470014BEB2A500C38F1D /* PBXContainerItemProxy */;
+		};
+		037A470314BEB2A500C38F1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pcl_sample_consensus;
+			targetProxy = 037A470214BEB2A500C38F1D /* PBXContainerItemProxy */;
+		};
+		037A470514BEB2A500C38F1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pcl_kdtree;
+			targetProxy = 037A470414BEB2A500C38F1D /* PBXContainerItemProxy */;
+		};
+		037A470714BEB2A500C38F1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pcl_search;
+			targetProxy = 037A470614BEB2A500C38F1D /* PBXContainerItemProxy */;
+		};
+		037A470914BEB2A500C38F1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pcl_filters;
+			targetProxy = 037A470814BEB2A500C38F1D /* PBXContainerItemProxy */;
+		};
+		037A470B14BEB2A500C38F1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pcl_segmentation;
+			targetProxy = 037A470A14BEB2A500C38F1D /* PBXContainerItemProxy */;
+		};
+		037A470D14BEB2A500C38F1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pcl_range_image;
+			targetProxy = 037A470C14BEB2A500C38F1D /* PBXContainerItemProxy */;
+		};
+		037A470F14BEB2A500C38F1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pcl_features;
+			targetProxy = 037A470E14BEB2A500C38F1D /* PBXContainerItemProxy */;
+		};
+		037A471114BEB2A500C38F1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pcl_range_image_border_extractor;
+			targetProxy = 037A471014BEB2A500C38F1D /* PBXContainerItemProxy */;
+		};
+		037A471314BEB2A500C38F1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pcl_surface;
+			targetProxy = 037A471214BEB2A500C38F1D /* PBXContainerItemProxy */;
+		};
+		037A471514BEB2A500C38F1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pcl_registration;
+			targetProxy = 037A471414BEB2A500C38F1D /* PBXContainerItemProxy */;
+		};
+		037A471714BEB2A500C38F1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pcl_keypoints;
+			targetProxy = 037A471614BEB2A500C38F1D /* PBXContainerItemProxy */;
 		};
 		E4EEB9AC138B136A00A80321 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

@@ -7,15 +7,18 @@ void greedyProjectionExample::setup(){
 	string filePath = ofToDataPath("bun0.pcd", true);
 	pcl::io::loadPCDFile (filePath, cloud_blob);
 	pcl::fromROSMsg (cloud_blob, *cloud);
+	//* the data should be available in cloud
 	
+	// Normal estimation*
 	pcl::NormalEstimation<pcl::PointXYZ, pcl::Normal> n;
 	pcl::PointCloud<pcl::Normal>::Ptr normals (new pcl::PointCloud<pcl::Normal>);
-	pcl::KdTree<pcl::PointXYZ>::Ptr tree (new pcl::KdTreeFLANN<pcl::PointXYZ>);
+	pcl::search::KdTree<pcl::PointXYZ>::Ptr tree (new pcl::search::KdTree<pcl::PointXYZ>);
 	tree->setInputCloud (cloud);
 	n.setInputCloud (cloud);
 	n.setSearchMethod (tree);
 	n.setKSearch (20);
 	n.compute (*normals);
+	//* normals should not contain the point normals + surface curvatures
 	
 	// Concatenate the XYZ and normal fields*
 	pcl::PointCloud<pcl::PointNormal>::Ptr cloud_with_normals (new pcl::PointCloud<pcl::PointNormal>);
@@ -23,7 +26,7 @@ void greedyProjectionExample::setup(){
 	//* cloud_with_normals = cloud + normals
 	
 	// Create search tree*
-	pcl::KdTree<pcl::PointNormal>::Ptr tree2 (new pcl::KdTreeFLANN<pcl::PointNormal>);
+	pcl::search::KdTree<pcl::PointNormal>::Ptr tree2 (new pcl::search::KdTree<pcl::PointNormal>);
 	tree2->setInputCloud (cloud_with_normals);
 	
 	// Initialize objects
@@ -45,6 +48,7 @@ void greedyProjectionExample::setup(){
 	gp3.setInputCloud (cloud_with_normals);
 	gp3.setSearchMethod (tree2);
 	gp3.reconstruct (triangles);
+	
 	
 	// Additional vertex information
 	std::vector<int> parts = gp3.getPartIDs();

@@ -5,3 +5,4 @@ build/
 *.app
 
 frame_*.pcd
+20*_mesh.vtk
