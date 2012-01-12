@@ -29,10 +29,6 @@
 		032F9C5514672FB4003AE10D /* boost_iostreams-xgcc42-mt-1_47.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 032F9C5014672FB3003AE10D /* boost_iostreams-xgcc42-mt-1_47.a */; };
 		032F9C5614672FB4003AE10D /* boost_system-xgcc42-mt-1_47.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 032F9C5114672FB3003AE10D /* boost_system-xgcc42-mt-1_47.a */; };
 		032F9C5714672FB4003AE10D /* boost_thread-xgcc42-mt-1_47.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 032F9C5214672FB3003AE10D /* boost_thread-xgcc42-mt-1_47.a */; };
-		032F9CB9146730C7003AE10D /* libnimCodecs.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032F9CAB146730C7003AE10D /* libnimCodecs.dylib */; };
-		032F9CBA146730C7003AE10D /* libnimMockNodes.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032F9CAC146730C7003AE10D /* libnimMockNodes.dylib */; };
-		032F9CBB146730C7003AE10D /* libnimRecorder.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032F9CAD146730C7003AE10D /* libnimRecorder.dylib */; };
-		032F9CBC146730C7003AE10D /* libOpenNI.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032F9CAE146730C7003AE10D /* libOpenNI.dylib */; };
 		032F9D0314673222003AE10D /* kdtreeSearchExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032F9CF214673222003AE10D /* kdtreeSearchExample.cpp */; };
 		032F9D0514673222003AE10D /* openniGrabberExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032F9CF614673222003AE10D /* openniGrabberExample.cpp */; };
 		032F9D0614673222003AE10D /* openNIGrabFrameApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032F9CF814673222003AE10D /* openNIGrabFrameApp.cpp */; };
@@ -41,7 +37,6 @@
 		032F9D0A14673222003AE10D /* voxelGridFilterExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032F9D0014673222003AE10D /* voxelGridFilterExample.cpp */; };
 		032F9D2414673357003AE10D /* flann_cpp_s-gd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 032F9D2214673357003AE10D /* flann_cpp_s-gd.a */; };
 		032F9D2514673357003AE10D /* flann_cpp_s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 032F9D2314673357003AE10D /* flann_cpp_s.a */; };
-		0352D7F61467CF820050D784 /* libusb-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0352D7F51467CF820050D784 /* libusb-1.0.0.dylib */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -162,14 +157,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 032F9BD014672A47003AE10D /* PCL_1-3-0_Libraries_for_OF.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 03E901C6146685D800A00E3E /* pcl_common */;
+			remoteGlobalIDString = 03E901C6146685D800A00E3E;
 			remoteInfo = pcl_common;
 		};
 		0352D81F1467D1BD0050D784 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 032F9BD014672A47003AE10D /* PCL_1-3-0_Libraries_for_OF.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 03E902061466891D00A00E3E /* pcl_io */;
+			remoteGlobalIDString = 03E902061466891D00A00E3E;
 			remoteInfo = pcl_io;
 		};
 		E4328147138ABC890047C5CB /* PBXContainerItemProxy */ = {
@@ -213,11 +208,6 @@
 		032F9C5014672FB3003AE10D /* boost_iostreams-xgcc42-mt-1_47.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "boost_iostreams-xgcc42-mt-1_47.a"; path = "../PCL_1-3-0_Libraries_for_OF/3rdPartyLibs/boost_1_47_0/lib/boost_iostreams-xgcc42-mt-1_47.a"; sourceTree = SOURCE_ROOT; };
 		032F9C5114672FB3003AE10D /* boost_system-xgcc42-mt-1_47.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "boost_system-xgcc42-mt-1_47.a"; path = "../PCL_1-3-0_Libraries_for_OF/3rdPartyLibs/boost_1_47_0/lib/boost_system-xgcc42-mt-1_47.a"; sourceTree = SOURCE_ROOT; };
 		032F9C5214672FB3003AE10D /* boost_thread-xgcc42-mt-1_47.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "boost_thread-xgcc42-mt-1_47.a"; path = "../PCL_1-3-0_Libraries_for_OF/3rdPartyLibs/boost_1_47_0/lib/boost_thread-xgcc42-mt-1_47.a"; sourceTree = SOURCE_ROOT; };
-		032F9CAA146730C7003AE10D /* change_exec_paths.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = change_exec_paths.sh; path = bin/data/openni/lib/change_exec_paths.sh; sourceTree = SOURCE_ROOT; };
-		032F9CAB146730C7003AE10D /* libnimCodecs.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libnimCodecs.dylib; path = bin/data/openni/lib/libnimCodecs.dylib; sourceTree = SOURCE_ROOT; };
-		032F9CAC146730C7003AE10D /* libnimMockNodes.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libnimMockNodes.dylib; path = bin/data/openni/lib/libnimMockNodes.dylib; sourceTree = SOURCE_ROOT; };
-		032F9CAD146730C7003AE10D /* libnimRecorder.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libnimRecorder.dylib; path = bin/data/openni/lib/libnimRecorder.dylib; sourceTree = SOURCE_ROOT; };
-		032F9CAE146730C7003AE10D /* libOpenNI.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOpenNI.dylib; path = bin/data/openni/lib/libOpenNI.dylib; sourceTree = SOURCE_ROOT; };
 		032F9CF014673222003AE10D /* greedyProjectionExample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = greedyProjectionExample.cpp; sourceTree = "<group>"; };
 		032F9CF114673222003AE10D /* greedyProjectionExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = greedyProjectionExample.h; sourceTree = "<group>"; };
 		032F9CF214673222003AE10D /* kdtreeSearchExample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kdtreeSearchExample.cpp; sourceTree = "<group>"; };
@@ -238,7 +228,7 @@
 		032F9D0114673222003AE10D /* voxelGridFilterExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = voxelGridFilterExample.h; sourceTree = "<group>"; };
 		032F9D2214673357003AE10D /* flann_cpp_s-gd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "flann_cpp_s-gd.a"; path = "../PCL_1-3-0_Libraries_for_OF/3rdPartyLibs/flann-1.6.11/lib/flann_cpp_s-gd.a"; sourceTree = SOURCE_ROOT; };
 		032F9D2314673357003AE10D /* flann_cpp_s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = flann_cpp_s.a; path = "../PCL_1-3-0_Libraries_for_OF/3rdPartyLibs/flann-1.6.11/lib/flann_cpp_s.a"; sourceTree = SOURCE_ROOT; };
-		0352D7F51467CF820050D784 /* libusb-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libusb-1.0.0.dylib"; path = "bin/data/openni/lib/libusb-1.0.0.dylib"; sourceTree = SOURCE_ROOT; };
+		037A465414BEABFD00C38F1D /* PCL_LIBS.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = PCL_LIBS.xcconfig; path = "../PCL_1-3-0_Libraries_for_OF/PCL_LIBS.xcconfig"; sourceTree = SOURCE_ROOT; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -297,13 +287,8 @@
 				032F9C5514672FB4003AE10D /* boost_iostreams-xgcc42-mt-1_47.a in Frameworks */,
 				032F9C5614672FB4003AE10D /* boost_system-xgcc42-mt-1_47.a in Frameworks */,
 				032F9C5714672FB4003AE10D /* boost_thread-xgcc42-mt-1_47.a in Frameworks */,
-				032F9CB9146730C7003AE10D /* libnimCodecs.dylib in Frameworks */,
-				032F9CBA146730C7003AE10D /* libnimMockNodes.dylib in Frameworks */,
-				032F9CBB146730C7003AE10D /* libnimRecorder.dylib in Frameworks */,
-				032F9CBC146730C7003AE10D /* libOpenNI.dylib in Frameworks */,
 				032F9D2414673357003AE10D /* flann_cpp_s-gd.a in Frameworks */,
 				032F9D2514673357003AE10D /* flann_cpp_s.a in Frameworks */,
-				0352D7F61467CF820050D784 /* libusb-1.0.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +298,7 @@
 		032F9BCB14672A23003AE10D /* PCL_1-3-0 */ = {
 			isa = PBXGroup;
 			children = (
+				037A465414BEABFD00C38F1D /* PCL_LIBS.xcconfig */,
 				032F9BD014672A47003AE10D /* PCL_1-3-0_Libraries_for_OF.xcodeproj */,
 			);
 			name = "PCL_1-3-0";
@@ -352,29 +338,6 @@
 			path = "../PCL_1-3-0_Libraries_for_OF/3rdPartyLibs/boost_1_47_0/lib";
 			sourceTree = SOURCE_ROOT;
 		};
-		032F9CA8146730C7003AE10D /* openni */ = {
-			isa = PBXGroup;
-			children = (
-				032F9CA9146730C7003AE10D /* lib */,
-			);
-			name = openni;
-			path = bin/data/openni;
-			sourceTree = "<group>";
-		};
-		032F9CA9146730C7003AE10D /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				0352D7F51467CF820050D784 /* libusb-1.0.0.dylib */,
-				032F9CAA146730C7003AE10D /* change_exec_paths.sh */,
-				032F9CAB146730C7003AE10D /* libnimCodecs.dylib */,
-				032F9CAC146730C7003AE10D /* libnimMockNodes.dylib */,
-				032F9CAD146730C7003AE10D /* libnimRecorder.dylib */,
-				032F9CAE146730C7003AE10D /* libOpenNI.dylib */,
-			);
-			name = lib;
-			path = bin/data/openni/lib;
-			sourceTree = SOURCE_ROOT;
-		};
 		032F9D1114673292003AE10D /* need to be updated */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,7 +358,6 @@
 			children = (
 				032F9D1F1467333D003AE10D /* flann */,
 				032F9D1E1467332F003AE10D /* boost */,
-				032F9CA8146730C7003AE10D /* openni */,
 			);
 			name = PCL_Dependencies;
 			sourceTree = "<group>";
